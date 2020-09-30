@@ -9,6 +9,7 @@
 
 	body{
 		background-color:black;
+		width: 100%;
 	}
 	
 .number{
@@ -213,7 +214,7 @@
 	color: #FFFFFF;
 	background-color: #FF00DC;
 	border-radius: 0px;
-	width: 70px;
+	width: 160px;
 	height: 70px;
 	float: left;
 	font-size: 20px;
@@ -288,24 +289,24 @@ onclick="calculator.display.value +='-'">
 
 	
 	<input type="button" class="operator" value="DEL" onclick="calculator.display.value = calculator.display.value.substr(0,calculator.display.value.length-1)">
-<input type="button" class="operatorE" name="equals" value="=" 
-onclick="calculator.display.value =eval(calculator.display.value)">
+<input type="button" class="operator" value="."
+onclick="calculator.display.value +='.'">
   </div>
 	
 <div class="inputColumn">
 <input type="button" class="operator" name="multiply" value="*" 
 onclick="calculator.display.value +='*'">
-<input type="button" class="operator" name="divide" value="%" 
-onclick="calculator.display.value +='/'">
+<input type="button" class="operatorE" name="equals" value="=" 
+onclick="calculator.display.value =eval(calculator.display.value)">
 <input type="button" class="operatorClear" name="clear" value="C" 
 onclick="calculator.display.value =' '">
+
   </div>
 	
 <div class="inputColumn">
 <input type="button" class="operator" name="divide" value="/" 
 onclick="calculator.display.value +='/'">
-<input type="button" class="operator" value="."
-onclick="calculator.display.value +='.'">
+
 
 </div>
 
