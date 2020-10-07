@@ -1,0 +1,816 @@
+<!doctype html>
+<html>
+<head>
+<body style="background-color:antiquewhite"></body>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width-device-width, initial-scale=1.0">
+	
+<style>
+
+	.inputRow{
+		width: 800px;
+		height: 300px;
+		
+	}
+	body
+{
+    font-family: Helvetica, Sans-Serif;
+    color: #444444;
+    background-color: #FAFAFA;
+}
+	.Ten1{
+		font-size: 300pt;
+		font-weight:800;
+		color:aqua;
+		position: absolute;
+		top: 20px;
+		left: 45px;
+		opacity: 0.7;
+		letter-spacing: -30px;
+	}
+	
+	.Ten2{
+		font-size: 300pt;
+		font-weight: 800;
+		color: #FF00D1;
+		position: absolute;
+		top: 15px;
+		left: 40px;
+		opacity: 0.7;
+		letter-spacing: -30px;
+	}
+	
+	.Ten3{
+		font-size: 300pt;
+		font-weight: 800;
+		color: #FFF700;
+		position: absolute;
+		top: 10px;
+		left: 35px;
+		opacity: 0.8;
+		letter-spacing: -30px;
+	}
+	
+	
+	.Ten4{
+		font-size: 300pt;
+		font-weight: 800;
+		color: #FFFFFF;
+		position: absolute;
+		top: 5px;
+		left: 30px;
+		z-index: 10;
+		opacity: 0.9;
+		letter-spacing: -30px;
+	}
+	
+	.Title{
+		position: absolute;
+		transform: rotate(-90deg);
+		transform-origin: top left;
+		width: 800px;
+		top: 1250px;
+		left: 70px;
+		font-size: 100pt;
+		color: #FFFFFF;
+		font-weight: 800;
+		 
+	}
+	
+	.Header{
+		font-size: 25px;
+		font-weight: 800;
+		color: #2D2D2D;
+		position: absolute;
+		top:100px;
+		left: 730px;
+	}
+	
+	.Header2{
+	font-size: 25px;
+		font-weight: 800;
+		color: #2D2D2D;
+		position: absolute;
+		top:400px;
+		left: 1180px;
+		width: 750px;
+	}
+	
+	.Header3{
+		font-size: 25px;
+		font-weight: 800;
+		color: #2D2D2D;
+		position: absolute;
+		top:700px;
+		left: 730px;
+	}
+	
+	.Header4{
+		font-size: 25px;
+		font-weight: 800;
+		color: #2D2D2D;
+		position: absolute;
+		top:1000px;
+		left: 1180px;
+		width: 450px;
+	}
+	
+	
+	.Header5{
+		font-size: 25px;
+		font-weight: 800;
+		color: #2D2D2D;
+		position: absolute;
+		top:1300px;
+		left: 730px;
+	}
+	
+	.Header6{
+		font-size: 25px;
+		font-weight: 800;
+		color: #2D2D2D;
+		position: absolute;
+		top:1600px;
+		left: 1180px;
+		width: 450px;
+	}
+	
+	.Header7{
+		font-size: 25px;
+		font-weight: 800;
+		color: #2D2D2D;
+		position: absolute;
+		top:1900px;
+		left: 730px;
+	}
+	
+	.Header8{
+		font-size: 25px;
+		font-weight: 800;
+		color: #2D2D2D;
+		position: absolute;
+		top:2200px;
+		left: 1180px;
+		width: 380px;
+	}
+	
+	.Header9{
+		font-size: 25px;
+		font-weight: 800;
+		color: #2D2D2D;
+		position: absolute;
+		top:2500px;
+		left: 730px;
+		width: 450px;
+	}
+	
+	.Header10{
+		font-size: 25px;
+		font-weight: 800;
+		color: #2D2D2D;
+		position: absolute;
+		top:2900px;
+		left: 1180px;
+		width: 380px;
+	}
+	
+	.Paragraph1{
+		font-size: 20px;
+		font-weight: 300;
+		color: #2D2D2D;
+		position: absolute;
+		top:140px;
+		left: 730px;
+		width: 400px;
+	}
+	
+	.Paragraph2{
+		font-size: 20px;
+		font-weight: 300;
+		color: #2D2D2D;
+		position: absolute;
+		top:440px;
+		left: 1180px;
+		width: 500px;
+	}
+	
+	.Paragraph3{
+		font-size: 20px;
+		font-weight: 300;
+		color: #2D2D2D;
+		position: absolute;
+		top:740px;
+		left: 730px;
+		width: 390px;
+	}
+	
+	.Paragraph4{
+		font-size: 20px;
+		font-weight: 300;
+		color: #2D2D2D;
+		position: absolute;
+		top:1070px;
+		left: 1180px;
+		width: 400px;
+	}
+	
+	.Paragraph5{
+		font-size: 20px;
+		font-weight: 300;
+		color: #2D2D2D;
+		position: absolute;
+		top: 1340px;
+		left: 730px;
+		width: 400px;
+	}
+	
+	.Paragraph6{
+		font-size: 20px;
+		font-weight: 300;
+		color: #2D2D2D;
+		position: absolute;
+		top:1640px;
+		left: 1180px;
+		width: 400px;
+	}
+	
+	.Paragraph7{
+		font-size: 20px;
+		font-weight: 300;
+		color: #2D2D2D;
+		position: absolute;
+		top: 1940px;
+		left: 730px;
+		width: 400px;
+	}
+	
+	.Paragraph8{
+		font-size: 20px;
+		font-weight: 300;
+		color: #2D2D2D;
+		position: absolute;
+		top:2270px;
+		left: 1180px;
+		width: 400px;
+	}
+	
+	.Paragraph9{
+		font-size: 20px;
+		font-weight: 300;
+		color: #2D2D2D;
+		position: absolute;
+		top: 2570px;
+		left: 730px;
+		width: 450px;
+	}
+	
+	.Paragraph10{
+		font-size: 20px;
+		font-weight: 300;
+		color: #2D2D2D;
+		position: absolute;
+		top:2970px;
+		left: 1180px;
+		width: 400px;
+	}
+	
+	.Blue1{
+	font-size: 70px;
+		font-weight: 800;
+		color:aqua;
+		position: absolute;
+		top: 90px;
+		left:660px;
+		
+	}
+	
+	.Pink2{
+		font-size: 70px;
+		font-weight: 800;
+		color:#FF00D1;
+		position: absolute;
+		top: 390px;
+		left: 1100px;
+	}
+	
+	.Yellow3{
+		font-size: 70px;
+		font-weight: 800;
+		color:#FFD300;
+		position: absolute;
+		top: 685px;
+		left:660px;
+		
+	}
+	
+	.Blue4{
+		font-size: 70px;
+		font-weight: 800;
+		color:aqua;
+		position: absolute;
+		top: 990px;
+		left: 1100px;
+	}
+	
+	.Pink5{
+	font-size: 70px;
+		font-weight: 800;
+		color:#FF00D1;
+		position: absolute;
+		top: 1290px;
+		left:660px;
+	}
+	
+	.Yellow6{
+	font-size: 70px;
+		font-weight: 800;
+		color:#FFD300;
+		position: absolute;
+		top: 1590px;
+		left: 1100px;
+		
+	}
+	
+	.Blue7{
+	font-size: 70px;
+		font-weight: 800;
+		color:aqua;
+		position: absolute;
+		top: 1890px;
+		left:660px;
+	
+	}
+	
+	.Pink8{
+		font-size: 70px;
+		font-weight: 800;
+		color:#FF00D1;
+		position: absolute;
+		top: 2190px;
+		left: 1100px;
+	}
+	
+	.Yellow9{
+	font-size: 70px;
+		font-weight: 800;
+		color:#FFD300;
+		position: absolute;
+		top: 2490px;
+		left:660px;
+	}
+	
+	.Blue10{
+		font-size: 70px;
+		font-weight: 800;
+		color:aqua;
+		position: absolute;
+		top: 2890px;
+		left: 1070px;
+	}
+	
+	
+	@media only screen and (max-width: 800px){
+	
+	.Ten1{
+		font-size: 200pt;
+		font-weight:800;
+		color:aqua;
+		position: absolute;
+		top: 20px;
+		left: 45px;
+		opacity: 0.7;
+		letter-spacing: -30px;
+	}
+	
+	.Ten2{
+		font-size: 200pt;
+		font-weight: 800;
+		color: #FF00D1;
+		position: absolute;
+		top: 15px;
+		left: 40px;
+		opacity: 0.7;
+		letter-spacing: -30px;
+	}
+	
+	.Ten3{
+		font-size: 200pt;
+		font-weight: 800;
+		color: #FFF700;
+		position: absolute;
+		top: 10px;
+		left: 35px;
+		opacity: 0.8;
+		letter-spacing: -30px;
+	}
+	
+	
+	.Ten4{
+		font-size: 200pt;
+		font-weight: 800;
+		color: #FFFFFF;
+		position: absolute;
+		top: 5px;
+		left: 30px;
+		z-index: 10;
+		opacity: 0.9;
+		letter-spacing: -30px;
+	}
+	
+	.Title{
+		position: absolute;
+		transform: rotate(0deg);
+		transform-origin: top left;
+		width: 800px;
+		top: 40px;
+		left:350px;
+		font-size: 80pt;
+		color: #FFFFFF;
+		font-weight: 800;
+		 
+	}
+	
+	.Header{
+		font-size: 20px;
+		font-weight: 800;
+		color: #2D2D2D;
+		position: absolute;
+		top:400px;
+		left: 350px;
+		width: 400px;
+	}
+	
+	.Header2{
+	font-size: 20px;
+		font-weight: 800;
+		color: #2D2D2D;
+		position: absolute;
+		top:700px;
+		left: 350px;
+		width: 750px;
+	}
+	
+	.Header3{
+		font-size: 20px;
+		font-weight: 800;
+		color: #2D2D2D;
+		position: absolute;
+		top:1000px;
+		left: 350px;
+		width:400px;
+	}
+	
+	.Header4{
+		font-size: 20px;
+		font-weight: 800;
+		color: #2D2D2D;
+		position: absolute;
+		top:1300px;
+		left: 350px;
+		width: 450px;
+	}
+	
+	
+	.Header5{
+		font-size: 20px;
+		font-weight: 800;
+		color: #2D2D2D;
+		position: absolute;
+		top:1600px;
+		left: 350px;
+		width: 400px;
+	}
+	
+	.Header6{
+		font-size: 20px;
+		font-weight: 800;
+		color: #2D2D2D;
+		position: absolute;
+		top:1900px;
+		left: 350px;
+		width: 450px;
+	}
+	
+	.Header7{
+		font-size: 20px;
+		font-weight: 800;
+		color: #2D2D2D;
+		position: absolute;
+		top:2200px;
+		left: 350px;
+		width: 400px;
+	}
+	
+	.Header8{
+		font-size: 20px;
+		font-weight: 800;
+		color: #2D2D2D;
+		position: absolute;
+		top:2500px;
+		left: 350px;
+		width: 380px;
+	}
+	
+	.Header9{
+		font-size: 20px;
+		font-weight: 800;
+		color: #2D2D2D;
+		position: absolute;
+		top:2800px;
+		left: 350px;
+		width: 450px;
+	}
+	
+	.Header10{
+		font-size: 20px;
+		font-weight: 800;
+		color: #2D2D2D;
+		position: absolute;
+		top:3100px;
+		left: 350px;
+		width: 380px;
+	}
+	
+	.Paragraph1{
+		font-size: 15px;
+		font-weight: 300;
+		color: #2D2D2D;
+		position: absolute;
+		top:440px;
+		left: 350px;
+		width: 400px;
+	}
+	
+	.Paragraph2{
+		font-size: 15px;
+		font-weight: 300;
+		color: #2D2D2D;
+		position: absolute;
+		top:740px;
+		left: 350px;
+		width: 400px;
+	}
+	
+	.Paragraph3{
+		font-size: 15px;
+		font-weight: 300;
+		color: #2D2D2D;
+		position: absolute;
+		top:1040px;
+		left: 350px;
+		width: 390px;
+	}
+	
+	.Paragraph4{
+		font-size: 15px;
+		font-weight: 300;
+		color: #2D2D2D;
+		position: absolute;
+		top:1370px;
+		left: 350px;
+		width: 400px;
+	}
+	
+	.Paragraph5{
+		font-size: 15px;
+		font-weight: 300;
+		color: #2D2D2D;
+		position: absolute;
+		top: 1640px;
+		left: 350px;
+		width: 400px;
+	}
+	
+	.Paragraph6{
+		font-size: 15px;
+		font-weight: 300;
+		color: #2D2D2D;
+		position: absolute;
+		top:1940px;
+		left: 350px;
+		width: 400px;
+	}
+	
+	.Paragraph7{
+		font-size: 15px;
+		font-weight: 300;
+		color: #2D2D2D;
+		position: absolute;
+		top: 2240px;
+		left: 350px;
+		width: 400px;
+	}
+	
+	.Paragraph8{
+		font-size: 15px;
+		font-weight: 300;
+		color: #2D2D2D;
+		position: absolute;
+		top:2570px;
+		left: 350px;
+		width: 400px;
+	}
+	
+	.Paragraph9{
+		font-size: 15px;
+		font-weight: 300;
+		color: #2D2D2D;
+		position: absolute;
+		top: 2840px;
+		left: 350px;
+		width: 400px;
+	}
+	
+	.Paragraph10{
+		font-size: 15px;
+		font-weight: 300;
+		color: #2D2D2D;
+		position: absolute;
+		top:3170px;
+		left: 350px;
+		width: 400px;
+	}
+	
+	.Blue1{
+	font-size: 70px;
+		font-weight: 800;
+		color:aqua;
+		position: absolute;
+		top: 390px;
+		left:265px;
+		
+	}
+	
+	.Pink2{
+		font-size: 70px;
+		font-weight: 800;
+		color:#FF00D1;
+		position: absolute;
+		top: 690px;
+		left: 265px;
+	}
+	
+	.Yellow3{
+		font-size: 70px;
+		font-weight: 800;
+		color:#FFD300;
+		position: absolute;
+		top: 990px;
+		left:265px;
+		
+	}
+	
+	.Blue4{
+		font-size: 70px;
+		font-weight: 800;
+		color:aqua;
+		position: absolute;
+		top: 1290px;
+		left: 265px;
+	}
+	
+	.Pink5{
+	font-size: 70px;
+		font-weight: 800;
+		color:#FF00D1;
+		position: absolute;
+		top: 1590px;
+		left:265px;
+	}
+	
+	.Yellow6{
+	font-size: 70px;
+		font-weight: 800;
+		color:#FFD300;
+		position: absolute;
+		top: 1890px;
+		left: 265px;
+		
+	}
+	
+	.Blue7{
+	font-size: 70px;
+		font-weight: 800;
+		color:aqua;
+		position: absolute;
+		top: 2190px;
+		left:265px;
+	
+	}
+	
+	.Pink8{
+		font-size: 70px;
+		font-weight: 800;
+		color:#FF00D1;
+		position: absolute;
+		top: 2490px;
+		left: 265px;
+	}
+	
+	.Yellow9{
+	font-size: 70px;
+		font-weight: 800;
+		color:#FFD300;
+		position: absolute;
+		top: 2790px;
+		left:265px;
+	}
+	
+	.Blue10{
+		font-size: 70px;
+		font-weight: 800;
+		color:aqua;
+		position: absolute;
+		top: 3090px;
+		left: 235px;
+	}
+		
+	}
+	
+		
+	
+	
+	
+	</style>
+</head>
+
+<body>
+
+
+<div class="inputRow">
+<div class="Ten4">10</div>
+<div class="Ten1">10</div>
+<div class="Ten2">10</div>
+<div class="Ten3">10</div>
+</div>
+	
+<div class= "Blue1">1.</div>
+<div class= "Blue4">4.</div>
+<div class= "Blue7">7.</div>
+<div class= "Blue10">10.</div>
+	
+<div class= "Pink2">2.</div>
+<div class= "Pink5">5.</div>
+<div class= "Pink8">8.</div>
+	
+<div class= "Yellow3">3.</div>
+<div class= "Yellow6">6.</div>
+<div class= "Yellow9">9.</div>
+
+
+
+
+<div class="Header"> "Good Design is innovative."</div>
+<div class="Header2"> “Good Design makes a
+product useful.”</div>
+<div class="Header3"> “Good Design is aesthetic.”</div>
+<div class="Header4"> “Good Design makes a
+product understandable.”</div>
+<div class="Header5"> “Good Design is unobstructive.”</div>
+<div class="Header6"> “Good Design is honest.”</div>
+<div class="Header7"> “Good Design is long lasting.”</div>
+<div class="Header8"> “Good Design is thorough
+down to the detail.”</div>
+<div class="Header9"> “Good Design is enviromentally 
+friendly.”</div>
+<div class="Header10"> “Good Design is as little
+design as possible.”</div>
+
+
+
+
+<div class="Paragraph1">Design is already advanced, but needs to continue to grow and keep that same originality.</div>
+<div class="Paragraph2">There is always a meaning or
+purpose in what we create. If there was no purpose, then what was the point in creating something?</div>
+<div class="Paragraph3">The most satisfying part of design. 
+When something looks good, we’re 
+instantly drawn to it.  </div>
+<div class="Paragraph4">If a design is too complex, it makes it
+hard for the consumer to process. Good
+design should be self-explanatory. </div>
+<div class="Paragraph5">Design must always fulfil some sort of
+purpose, and leave room for someone’s
+own interpretation. </div>
+<div class="Paragraph6">It does not show a product as more than
+it really is, and does not manipulate the
+consumer with empty promises.</div>
+<div class="Paragraph7">Design that goes beyond limits, and never
+goes out of style.</div>
+<div class="Paragraph8">Care and accuracy within the design
+process shows respect to the user. 
+  </div>
+<div class="Paragraph9">Design should always try to contribute to the
+preservation of the enviroment by conserving
+recources and minimising pollution </div>
+<div class="Paragraph10">It is straight down to the point, and
+does not exaggerate. </div>
+
+	
+	<div class= "Title">Principles of Design</div>
+	
+
+
+
+</body>
+</html>
