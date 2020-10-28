@@ -1,0 +1,470 @@
+<!doctype html>
+<html>
+<head>
+	
+<style>
+	
+	body {
+		width: 100%;
+		margin-top: 3%;
+		background-image: linear-gradient(purple, black);
+	}
+	
+
+	.Lid1{
+	position: fixed;
+	width: 55px;
+      height: 85px;
+      border-radius: 50%;
+		transform: rotate(90deg);
+		box-shadow: -10px 0px 0 0 black;
+	margin-top: 77px;
+	margin-left: 47px;
+	
+	}
+	
+	.Lid2{
+	position: fixed;
+	width: 55px;
+      height: 85px;
+      border-radius: 50%;
+		transform: rotate(90deg);
+		box-shadow: -10px 0px 0 0 black;
+	margin-top: 77px;
+	margin-left: 147px;
+	}
+
+	.Pupil1{
+	position: fixed;
+	height: 10px;
+	width: 10px;
+	background-color: white;
+	border-radius: 50%;
+	margin-top: 95px;
+	margin-left: 79px;
+	z-index: -7;
+	
+	}
+	
+	.Pupil2{
+	position: fixed;
+	height: 10px;
+	width: 10px;
+	background-color: white;
+	border-radius: 50%;
+	margin-top: 95px;
+	margin-left: 180px;
+	z-index: -7;
+	
+	}
+	
+	.Iris1{
+	position: fixed;
+	height: 40px;
+	width: 40px;
+	background-color: #006EFF;
+	border-radius: 50%;
+	margin-top: 90px;
+	margin-left: 55px;
+	z-index: -8;
+	
+		
+	}
+	
+
+	.Iris2{
+	position: fixed;
+	height: 40px;
+	width: 40px;
+	background-color: #006EFF;
+	border-radius: 50%;
+	margin-top: 90px;
+	margin-left: 156px;
+	z-index: -8;
+	}
+	
+	.eye1{
+	position: fixed;
+	height: 50px;
+	width: 70px;
+	background-color: white;
+	border-radius: 50%;
+	margin-top: 85px;
+	margin-left: 40px;
+	z-index: -9;
+		}
+	
+	
+	
+	.eye2{
+	position: fixed;
+	height: 50px;
+	width: 70px;
+	background-color: white;
+	border-radius: 50%;
+	margin-top: 85px;
+	margin-left: 140px;
+	z-index: -9;
+		
+	}
+	
+	.Cheek1{
+	position: fixed;
+	height: 30px;
+	width: 40px;
+	border-radius: 50%;
+	background-color: pink;
+	margin-top: 140px;
+	margin-left: 20px;
+	opacity: 50%;
+	z-index: -9;
+	
+	}
+	
+	.Cheek2{
+	position: fixed;
+	height: 30px;
+	width: 40px;
+	border-radius: 50%;
+	background-color: pink;
+	margin-top: 140px;
+	margin-left: 190px;
+	opacity: 50%;
+	z-index: -9;
+	}
+	
+	.Nose{
+	position: fixed;
+	width: 15px;
+      height: 25px;
+      border-radius: 50%;
+		transform: rotate(-90deg);
+		box-shadow: -3px 0px 0 0 #D1AFA9;
+	margin-top: 137px;
+	margin-left: 117px;
+	}
+	
+	
+	.Mouth{
+	position: fixed;
+	width: 40px;
+      height: 65px;
+      border-radius: 50%;
+		transform: rotate(-90deg);
+		box-shadow: -7px 0px 0 0 #FDAAAA;
+	margin-top: 150px;
+	margin-left: 105px;
+	z-index: 1;
+	}
+	
+	
+	.head{
+	position: fixed;
+	height: 250px;
+  	width: 250px;
+  	background-color: #FBDFCE; 
+  	border-radius: 50%;
+	z-index: -10;
+	}
+	
+	.Ear1{
+	position: fixed;
+	height: 50px;
+	width: 40px;
+	border-radius: 50%;
+	background-color: #FBDFCE;
+	margin-top: 105px;
+	margin-left: -30px;
+	z-index: -10;
+	}
+	
+	.Ear2{
+	position: fixed;
+	height: 50px;
+	width: 40px;
+	border-radius: 50%;
+	background-color: #FBDFCE;
+	margin-top: 105px;
+	margin-left: 237px;
+	z-index: -10;
+	}
+	
+	.Single1{
+	position: fixed;
+	height: 5px;
+	width: 5px;
+	border-radius: 50%;
+	background-color: #707070;
+	margin-top: 145px;
+	margin-left: -10px;
+	z-index: -9;
+	}
+	
+	.Single2{
+	position: fixed;
+	height: 5px;
+	width: 5px;
+	border-radius: 50%;
+	background-color: #707070;
+	margin-top: 145px;
+	margin-left: 255px;
+	z-index: -9;
+	}
+	
+	.Double1{
+	position: fixed;
+	height: 5px;
+	width: 5px;
+	border-radius: 50%;
+	background-color: #707070;
+	margin-top: 140px;
+	margin-left: -20px;
+	z-index: -9;
+	}
+	
+	.Double2{
+	position: fixed;
+	height: 5px;
+	width: 5px;
+	border-radius: 50%;
+	background-color: #707070;
+	margin-top: 140px;
+	margin-left: 265px;
+	z-index: -9;
+	}
+	
+	.Cartilage{
+	position: fixed;
+	height: 5px;
+	width: 5px;
+	border-radius: 50%;
+	background-color: #ACAAAA;
+	margin-top: 115px;
+	margin-left: 265px;
+	z-index: -9;
+	}
+	
+	.HairBase{
+	position: fixed;
+	height: 350px;
+  	width: 350px;
+	margin-top: -45px;
+	margin-left: -51px;
+  	background-color: #1F0D0D;
+  	border-radius: 50%;
+	z-index: -11;
+	}
+	
+	.HairMiddle{
+	position: fixed;
+	height: 250px;
+  	width: 348px;
+	margin-top: 38px;
+	margin-left: -50px;
+  	background-color: #1F0D0D;
+  	border-radius: 30%;
+	z-index: -12;
+	}
+	
+	.main{
+	position: fixed;
+	/* center the element */
+	left: 50%;
+	top: 50px;
+	margin-left: -140px;
+	zoom: 2;
+	
+	}
+	
+	.Bang1{
+	position: fixed;
+	width: 250px;
+      height: 250px;
+	transform: rotate(35deg);
+		background-color: transparent;
+		margin-top: -10px;
+		margin-left: 10px;
+      border-radius: 50%;
+      box-shadow: -20px -0px 0 0 #1F0D0D;
+		z-index: 1;
+	
+	}
+	
+	.Bang2{
+	position: fixed;
+	width: 250px;
+      height: 250px;
+	transform: rotate(-35deg);
+		background-color: transparent;
+		margin-top: -10px;
+		margin-left: -10px;
+      border-radius: 50%;
+      box-shadow: 20px -0px 0 0 #1F0D0D;
+		z-index: 1;
+	}
+	
+	.Bang3{
+		position: fixed;
+	width: 200px;
+      height: 200px;
+	transform: rotate(35deg);
+		background-color: transparent;
+		margin-top: 10px;
+		margin-left: 30px;
+      border-radius: 50%;
+      box-shadow: -20px -0px 0 0 #1F0D0D;
+		z-index: 1;
+	
+	}
+	
+	.Bang4{
+		position: fixed;
+	width: 200px;
+      height: 200px;
+	transform: rotate(-35deg);
+		background-color: transparent;
+		margin-top: 10px;
+		margin-left: 30px;
+      border-radius: 50%;
+      box-shadow: 20px -0px 0 0 #1F0D0D;
+		z-index: 1;
+	}
+	
+	.HB1{
+	position: fixed;
+	width: 250px;
+      height: 450px;
+		background-color: transparent;
+		margin-top: -2px;
+		margin-left: 5px;
+      border-radius: 50%;
+      box-shadow: -70px -20px 0 0 #1F0D0D;
+		z-index: -15;
+	}
+	
+	.HB2{
+	position: fixed;
+	width: 200px;
+      height: 400px;
+		background-color: transparent;
+		margin-top: 15px;
+		margin-left: 50px;
+      border-radius: 50%;
+      box-shadow: -70px -20px 0 0 #1F0D0D;
+		z-index: -15;
+	
+	}
+	
+	.HB3{
+	position: fixed;
+	width: 250px;
+      height: 450px;
+		background-color: transparent;
+		margin-top: -2px;
+		margin-left: -10px;
+      border-radius: 50%;
+      box-shadow: 70px -20px 0 0 #1F0D0D;
+		z-index: -15;
+	
+	}
+	
+	.HB4{
+	position: fixed;
+	width: 200px;
+      height: 400px;
+		background-color: transparent;
+		margin-top: 15px;
+		margin-left: -10px;
+      border-radius: 50%;
+      box-shadow: 70px -20px 0 0 #1F0D0D;
+		z-index: -15;
+	}
+	
+	.HB5{
+	position: fixed;
+	width: 200px;
+      height: 200px;
+	transform: rotate(55deg);
+		background-color: transparent;
+		margin-top:170px;
+		margin-left: 70px;
+      border-radius: 50%;
+      box-shadow: -50px 30px 0 0 #1F0D0D;
+		z-index: -15;
+	}
+	
+	.HB6{
+		position: fixed;
+	width: 200px;
+      height: 200px;
+	transform: rotate(185deg);
+		background-color: transparent;
+		margin-top:175px;
+		margin-left: -30px;
+      border-radius: 50%;
+      box-shadow: -50px 30px 0 0 #1F0D0D;
+		z-index: -15;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	</style>	
+	
+<meta charset="UTF-8">
+<title>Portrait</title>
+</head>
+
+<body>
+
+
+	
+	
+<div class="main">
+	
+<div class="Pupil1"></div>
+<div class="Pupil2"></div>
+<div class="Iris1"></div>
+<div class="Iris2"></div>
+<div class="eye1"></div>
+<div class="eye2"></div>
+<div class="Lid1"></div>	
+<div class="Lid2"></div>
+
+<div class="Mouth"></div>
+<div class="face"></div>
+<div class="head"></div>
+<div class="Nose"></div>
+<div class="Ear1"></div>
+<div class="Ear2"></div>
+<div class="Cheek1"></div>
+<div class="Cheek2"></div>
+<div class="Single1"></div>
+<div class="Single2"></div>
+<div class="Double1"></div>
+<div class="Double2"></div>
+<div class="Cartilage"></div>
+<div class="HairBase"></div>
+<div class="HairMiddle"></div>
+
+<div class="Bang1"></div>
+<div class="Bang2"></div>
+<div class="Bang3"></div>
+<div class="Bang4"></div>
+
+<div class="HB1"></div>
+<div class="HB2"></div>
+<div class="HB3"></div>
+<div class="HB4"></div>
+<div class="HB5"></div>
+<div class="HB6"></div>
+	
+	</div>
+	
+</body>
+</html>
